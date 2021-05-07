@@ -1,0 +1,7 @@
+
+<% unless @search.nil? %>
+    $("#all-post").empty()
+    <% @search.each do |post| %>
+       $("#all-post").append(`<%= escape_javascript render "post", post: post %>`)
+    <% end %>
+<% end %>
