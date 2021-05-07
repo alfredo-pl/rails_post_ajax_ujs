@@ -1,0 +1,9 @@
+<li id="<%= post.id%>">
+        <strong><%= post.title %></strong>
+        <p><%= post.content %></p>
+        <p>
+        <%= link_to 'Show', post,remote: true , class: "btn btn-primary" %>
+        <%= link_to 'Edit', edit_post_path(post), remote: true,class: "btn btn-success" %>
+        <%= link_to 'Destroy', post,remote: true, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger" %>
+        </p>
+</li>
