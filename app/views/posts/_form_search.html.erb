@@ -1,0 +1,6 @@
+<%= form_with url: "/search", method: :get, remote: true do |form|%>
+    <div class="field mb-3 col-6">
+        <%= form.text_field :content, placeholder: "Search",class:"form-control mb-3" %>
+        <button class="actions btn btn-dark" type="form.submit">Search</button>
+    </div>  
+<% end %>
